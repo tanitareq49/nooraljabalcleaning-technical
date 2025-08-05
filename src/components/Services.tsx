@@ -95,11 +95,16 @@ const Services = () => {
                 </ul>
 
                 {/* CTA Button */}
-                <button className="w-full mt-6 bg-primary/10 hover:bg-primary hover:text-primary-foreground text-primary font-semibold py-3 px-6 rounded-lg transition-all duration-300 group">
+                <a 
+                  href="https://wa.me/966123456789?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20cleaning%20services%20in%20Dubai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full mt-6 bg-primary/10 hover:bg-primary hover:text-primary-foreground text-primary font-semibold py-3 px-6 rounded-lg transition-all duration-300 group block text-center"
+                >
                   <span className={isRTL ? 'font-arabic' : 'font-english'}>
-                    {isRTL ? 'اطلب الخدمة' : 'Request Service'}
+                    {isRTL ? 'اطلب الخدمة عبر واتساب' : 'Request via WhatsApp'}
                   </span>
-                </button>
+                </a>
               </div>
             </div>
           ))}
@@ -117,11 +122,16 @@ const Services = () => {
                 : 'Contact us to discuss your specific needs and we\'ll provide customized solutions that fit your requirements.'
               }
             </p>
-            <button className="btn-primary">
+            <a 
+              href="https://wa.me/966123456789?text=Hello%2C%20I%20would%20like%20a%20free%20consultation%20for%20cleaning%20services%20in%20Dubai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
               <span className={isRTL ? 'font-arabic' : 'font-english'}>
-                {isRTL ? 'احصل على استشارة مجانية' : 'Get Free Consultation'}
+                {isRTL ? 'احصل على استشارة مجانية عبر واتساب' : 'Get Free Consultation via WhatsApp'}
               </span>
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -58,13 +58,15 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button
-                onClick={scrollToContact}
+              <a
+                href="https://wa.me/966123456789?text=Hello%2C%20I%20would%20like%20to%20get%20a%20free%20quote%20for%20cleaning%20services%20in%20Dubai"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary group"
               >
-                <span>{t.hero.cta}</span>
+                <span>{isRTL ? 'احصل على عرض مجاني عبر واتساب' : 'Get Free Quote via WhatsApp'}</span>
                 <ArrowRight className={`w-5 h-5 ml-2 rtl:ml-0 rtl:mr-2 rtl:rotate-180 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform`} />
-              </button>
+              </a>
               
               <a
                 href="tel:+966123456789"
@@ -123,9 +125,9 @@ const Hero = () => {
               </div>
               
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 card-hover">
-                <div className="text-3xl font-bold text-white mb-2">3</div>
+                <div className="text-3xl font-bold text-white mb-2">1</div>
                 <div className={`text-white/80 ${isRTL ? 'font-arabic' : 'font-english'}`}>
-                  {isRTL ? 'مدن نخدمها' : 'Cities Served'}
+                  {isRTL ? 'مدينة نخدمها' : 'City Served'}
                 </div>
               </div>
             </div>

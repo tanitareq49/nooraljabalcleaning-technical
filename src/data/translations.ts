@@ -11,9 +11,9 @@ export const translations = {
     
     // Hero Section
     hero: {
-      title: "Professional Cleaning & Technical Services",
-      subtitle: "Noor Al Jabal - Your Trusted Partner for Complete Cleaning Solutions",
-      description: "We provide comprehensive cleaning and technical services for residential and commercial properties. Licensed, insured, and committed to excellence.",
+      title: "Professional Cleaning & Technical Services in Dubai",
+      subtitle: "NJS - Your Trusted Partner for Complete Cleaning Solutions in Dubai Main Town",
+      description: "We provide comprehensive cleaning and technical services for residential and commercial properties in Dubai. Licensed, insured, and committed to excellence.",
       cta: "Get Free Quote",
       phone: "+966 12 345 6789"
     },
@@ -123,13 +123,13 @@ export const translations = {
 
     // About
     about: {
-      title: "About Noor Al Jabal",
-      subtitle: "Your trusted cleaning and technical services partner",
-      description: "With over 5 years of experience, Noor Al Jabal Cleaning & Technical Services has been serving residential and commercial clients across Saudi Arabia. We are fully licensed and committed to providing exceptional service quality.",
+      title: "About NJS",
+      subtitle: "Your trusted cleaning and technical services partner in Dubai",
+      description: "With over 5 years of experience, NJS Cleaning & Technical Services has been serving residential and commercial clients in Dubai main town. We are fully licensed and committed to providing exceptional service quality.",
       details: {
         license: "License No: CL-2019-001234",
         experience: "5+ Years of Experience",
-        location: "Serving Riyadh, Jeddah, and Eastern Province",
+        location: "Serving Dubai Main Town",
         mission: "To provide exceptional cleaning and technical services that exceed customer expectations while maintaining the highest standards of professionalism and environmental responsibility."
       }
     },
@@ -140,7 +140,7 @@ export const translations = {
       items: [
         {
           question: "What areas do you serve?",
-          answer: "We provide services across Riyadh, Jeddah, and the Eastern Province. Contact us to confirm service availability in your area."
+          answer: "We provide services in Dubai main town area. Contact us to confirm service availability in your specific location."
         },
         {
           question: "Are your cleaning products safe?",
@@ -179,20 +179,20 @@ export const translations = {
       },
       info: {
         phone: "+966 12 345 6789",
-        email: "info@nooraljabat.com",
-        address: "123 Business District, Riyadh, Saudi Arabia"
+        email: "info@njscleaning.com",
+        address: "Dubai Main Town, Dubai, UAE"
       },
       whatsapp: "WhatsApp Us"
     },
 
     // Footer
     footer: {
-      description: "Professional cleaning and technical services across Saudi Arabia. Licensed, insured, and committed to excellence.",
+      description: "Professional cleaning and technical services in Dubai. Licensed, insured, and committed to excellence.",
       quickLinks: "Quick Links",
       services: "Services", 
       contact: "Contact Info",
       social: "Follow Us",
-      rights: "© 2024 Noor Al Jabal Cleaning & Technical Services. All rights reserved.",
+      rights: "© 2024 NJS Cleaning & Technical Services. All rights reserved.",
       privacy: "Privacy Policy",
       terms: "Terms of Service"
     }
@@ -210,9 +210,9 @@ export const translations = {
 
     // Hero Section
     hero: {
-      title: "خدمات التنظيف والصيانة المهنية",
-      subtitle: "نور الجبل - شريككم الموثوق لحلول التنظيف الشاملة",
-      description: "نقدم خدمات تنظيف وصيانة شاملة للعقارات السكنية والتجارية. مرخصون ومؤمنون وملتزمون بالتميز.",
+      title: "خدمات التنظيف والصيانة المهنية في دبي",
+      subtitle: "إن جي إس - شريككم الموثوق لحلول التنظيف الشاملة في دبي الرئيسية",
+      description: "نقدم خدمات تنظيف وصيانة شاملة للعقارات السكنية والتجارية في دبي. مرخصون ومؤمنون وملتزمون بالتميز.",
       cta: "احصل على عرض مجاني",
       phone: "+966 12 345 6789"
     },
@@ -322,13 +322,13 @@ export const translations = {
 
     // About
     about: {
-      title: "عن نور الجبل",
-      subtitle: "شريككم الموثوق لخدمات التنظيف والصيانة",
-      description: "مع أكثر من 5 سنوات من الخبرة، تخدم شركة نور الجبل للتنظيف والخدمات الفنية العملاء السكنيين والتجاريين في جميع أنحاء المملكة العربية السعودية. نحن مرخصون بالكامل وملتزمون بتقديم جودة خدمة استثنائية.",
+      title: "عن إن جي إس",
+      subtitle: "شريككم الموثوق لخدمات التنظيف والصيانة في دبي",
+      description: "مع أكثر من 5 سنوات من الخبرة، تخدم شركة إن جي إس للتنظيف والخدمات الفنية العملاء السكنيين والتجاريين في دبي الرئيسية. نحن مرخصون بالكامل وملتزمون بتقديم جودة خدمة استثنائية.",
       details: {
         license: "رقم الترخيص: CL-2019-001234",
         experience: "أكثر من 5 سنوات من الخبرة",
-        location: "نخدم الرياض وجدة والمنطقة الشرقية",
+        location: "نخدم دبي الرئيسية",
         mission: "تقديم خدمات تنظيف وصيانة استثنائية تتجاوز توقعات العملاء مع الحفاظ على أعلى معايير الاحترافية والمسؤولية البيئية."
       }
     },
@@ -339,7 +339,7 @@ export const translations = {
       items: [
         {
           question: "ما هي المناطق التي تخدمونها؟",
-          answer: "نقدم الخدمات في الرياض وجدة والمنطقة الشرقية. اتصلوا بنا للتأكد من توفر الخدمة في منطقتكم."
+          answer: "نقدم الخدمات في منطقة دبي الرئيسية. اتصلوا بنا للتأكد من توفر الخدمة في موقعكم المحدد."
         },
         {
           question: "هل منتجات التنظيف آمنة؟",
@@ -378,20 +378,20 @@ export const translations = {
       },
       info: {
         phone: "+966 12 345 6789",
-        email: "info@nooraljabat.com",
-        address: "123 الحي التجاري، الرياض، المملكة العربية السعودية"
+        email: "info@njscleaning.com",
+        address: "دبي الرئيسية، دبي، الإمارات العربية المتحدة"
       },
       whatsapp: "تواصل واتساب"
     },
 
     // Footer
     footer: {
-      description: "خدمات التنظيف والصيانة المهنية في جميع أنحاء المملكة العربية السعودية. مرخصون ومؤمنون وملتزمون بالتميز.",
+      description: "خدمات التنظيف والصيانة المهنية في دبي. مرخصون ومؤمنون وملتزمون بالتميز.",
       quickLinks: "روابط سريعة",
       services: "الخدمات",
       contact: "معلومات الاتصال",
       social: "تابعونا",
-      rights: "© 2024 نور الجبل للتنظيف والخدمات الفنية. جميع الحقوق محفوظة.",
+      rights: "© 2024 إن جي إس للتنظيف والخدمات الفنية. جميع الحقوق محفوظة.",
       privacy: "سياسة الخصوصية",
       terms: "شروط الخدمة"
     }
