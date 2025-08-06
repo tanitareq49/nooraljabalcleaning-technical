@@ -6,36 +6,37 @@ export const translations = {
       services: "Services",
       about: "About Us",
       contact: "Contact",
-      language: "العربية"
+      language: "العربية",
     },
-    
+
     // Hero Section
     hero: {
-      title: "Professional Cleaning & Technical Services in Dubai",
-      subtitle: "NJS - Your Trusted Partner for Complete Cleaning Solutions in Dubai Main Town",
-      description: "We provide comprehensive cleaning and technical services for residential and commercial properties in Dubai. Licensed, insured, and committed to excellence.",
+      title: "Expert Cleaning & Technical Services in Dubai",
+      subtitle: "Where Clean Meets Precision.",
+      description:
+        "From spotless homes to smooth-running systems — our certified team provides reliable cleaning and technical services across Dubai.",
       cta: "Get Free Quote",
-      phone: "+966 12 345 6789"
+      phone: "+966 12 345 6789",
     },
 
     // Services
     services: {
       title: "Our Services",
       subtitle: "Complete cleaning and technical solutions for your needs",
-      
+
       deepCleaning: {
         title: "Deep Cleaning Services",
         description: "Comprehensive deep cleaning solutions",
         items: [
           "Post-Construction Cleaning",
           "Sofa & Upholstery Cleaning",
-          "Carpet & Rug Cleaning", 
+          "Carpet & Rug Cleaning",
           "Mattress Deep Cleaning",
           "Kitchen Deep Cleaning",
-          "Bathroom Sanitization"
-        ]
+          "Bathroom Sanitization",
+        ],
       },
-      
+
       generalCleaning: {
         title: "General Cleaning Services",
         description: "Regular maintenance and cleaning",
@@ -45,10 +46,10 @@ export const translations = {
           "Residential Cleaning",
           "Commercial Cleaning",
           "Move-in/Move-out Cleaning",
-          "Window Cleaning"
-        ]
+          "Window Cleaning",
+        ],
       },
-      
+
       technical: {
         title: "Technical Services",
         description: "Professional maintenance and repair",
@@ -58,9 +59,9 @@ export const translations = {
           "Plumbing Repairs",
           "Handyman Services",
           "Painting Services",
-          "Minor Repairs"
-        ]
-      }
+          "Minor Repairs",
+        ],
+      },
     },
 
     // Why Choose Us
@@ -70,29 +71,29 @@ export const translations = {
       items: [
         {
           title: "Experienced Team",
-          description: "5+ years of professional cleaning experience"
+          description: "5+ years of professional cleaning experience",
         },
         {
           title: "Quick Response",
-          description: "Same-day service available"
+          description: "Same-day service available",
         },
         {
           title: "Eco-Friendly Products",
-          description: "Safe for your family and environment"
+          description: "Safe for your family and environment",
         },
         {
           title: "100% Satisfaction Guarantee",
-          description: "We stand behind our quality work"
+          description: "We stand behind our quality work",
         },
         {
           title: "Licensed & Insured",
-          description: "Fully certified and covered"
+          description: "Fully certified and covered",
         },
         {
           title: "Competitive Pricing",
-          description: "Best value for premium services"
-        }
-      ]
+          description: "Best value for premium services",
+        },
+      ],
     },
 
     // Testimonials
@@ -104,34 +105,36 @@ export const translations = {
           name: "Ahmed Al-Rashid",
           text: "Excellent service! They cleaned our office thoroughly and professionally. Highly recommended!",
           rating: 5,
-          location: "Riyadh"
+          location: "Riyadh",
         },
         {
           name: "Sarah Mohammed",
           text: "Amazing deep cleaning service. My carpets look brand new! Very satisfied with their work.",
           rating: 5,
-          location: "Jeddah"
+          location: "Jeddah",
         },
         {
           name: "Omar Abdullah",
           text: "Professional team, on-time service, and great results. Will definitely use them again.",
           rating: 5,
-          location: "Dammam"
-        }
-      ]
+          location: "Dammam",
+        },
+      ],
     },
 
     // About
     about: {
       title: "About NJS",
       subtitle: "Your trusted cleaning and technical services partner in Dubai",
-      description: "With over 5 years of experience, NJS Cleaning & Technical Services has been serving residential and commercial clients in Dubai main town. We are fully licensed and committed to providing exceptional service quality.",
+      description:
+        "With over 5 years of experience, NJS Cleaning & Technical Services has been serving residential and commercial clients in Dubai main town. We are fully licensed and committed to providing exceptional service quality.",
       details: {
         license: "License No: CL-2019-001234",
         experience: "5+ Years of Experience",
         location: "Serving Dubai Main Town",
-        mission: "To provide exceptional cleaning and technical services that exceed customer expectations while maintaining the highest standards of professionalism and environmental responsibility."
-      }
+        mission:
+          "To provide exceptional cleaning and technical services that exceed customer expectations while maintaining the highest standards of professionalism and environmental responsibility.",
+      },
     },
 
     // FAQ
@@ -140,29 +143,35 @@ export const translations = {
       items: [
         {
           question: "What areas do you serve?",
-          answer: "We provide services in Dubai main town area. Contact us to confirm service availability in your specific location."
+          answer:
+            "We provide services in Dubai main town area. Contact us to confirm service availability in your specific location.",
         },
         {
           question: "Are your cleaning products safe?",
-          answer: "Yes, we use eco-friendly, non-toxic cleaning products that are safe for children, pets, and the environment."
+          answer:
+            "Yes, we use eco-friendly, non-toxic cleaning products that are safe for children, pets, and the environment.",
         },
         {
           question: "Do you offer same-day service?",
-          answer: "Yes, we offer same-day service for urgent cleaning needs, subject to availability. Contact us early for best scheduling."
+          answer:
+            "Yes, we offer same-day service for urgent cleaning needs, subject to availability. Contact us early for best scheduling.",
         },
         {
           question: "What is included in deep cleaning?",
-          answer: "Deep cleaning includes detailed cleaning of all surfaces, appliances, fixtures, carpets, upholstery, and hard-to-reach areas."
+          answer:
+            "Deep cleaning includes detailed cleaning of all surfaces, appliances, fixtures, carpets, upholstery, and hard-to-reach areas.",
         },
         {
           question: "Are you licensed and insured?",
-          answer: "Yes, we are fully licensed and insured. Our license number is CL-2019-001234."
+          answer:
+            "Yes, we are fully licensed and insured. Our license number is CL-2019-001234.",
         },
         {
           question: "How can I get a quote?",
-          answer: "You can get a free quote by calling us, using WhatsApp, or filling out our contact form. We'll assess your needs and provide a competitive estimate."
-        }
-      ]
+          answer:
+            "You can get a free quote by calling us, using WhatsApp, or filling out our contact form. We'll assess your needs and provide a competitive estimate.",
+        },
+      ],
     },
 
     // Contact
@@ -171,31 +180,32 @@ export const translations = {
       subtitle: "Get in touch for a free consultation",
       form: {
         name: "Full Name",
-        email: "Email Address", 
+        email: "Email Address",
         phone: "Phone Number",
         service: "Service Needed",
         message: "Message",
-        submit: "Send Message"
+        submit: "Send Message",
       },
       info: {
         phone: "+966 12 345 6789",
         email: "info@njscleaning.com",
-        address: "Dubai Main Town, Dubai, UAE"
+        address: "Dubai Main Town, Dubai, UAE",
       },
-      whatsapp: "WhatsApp Us"
+      whatsapp: "WhatsApp Us",
     },
 
     // Footer
     footer: {
-      description: "Professional cleaning and technical services in Dubai. Licensed, insured, and committed to excellence.",
+      description:
+        "Professional cleaning and technical services in Dubai. Licensed, insured, and committed to excellence.",
       quickLinks: "Quick Links",
-      services: "Services", 
+      services: "Services",
       contact: "Contact Info",
       social: "Follow Us",
       rights: "© 2024 NJS Cleaning & Technical Services. All rights reserved.",
       privacy: "Privacy Policy",
-      terms: "Terms of Service"
-    }
+      terms: "Terms of Service",
+    },
   },
 
   ar: {
@@ -203,25 +213,26 @@ export const translations = {
     nav: {
       home: "الرئيسية",
       services: "الخدمات",
-      about: "من نحن", 
+      about: "من نحن",
       contact: "اتصل بنا",
-      language: "English"
+      language: "English",
     },
 
     // Hero Section
     hero: {
-      title: "خدمات التنظيف والصيانة المهنية في دبي",
-      subtitle: "إن جي إس - شريككم الموثوق لحلول التنظيف الشاملة في دبي الرئيسية",
-      description: "نقدم خدمات تنظيف وصيانة شاملة للعقارات السكنية والتجارية في دبي. مرخصون ومؤمنون وملتزمون بالتميز.",
+      title: "خدمات التنظيف والصيانة الفنية المتخصصة في دبي",
+      subtitle: "حيث يلتقي النظافة بالإتقان",
+      description:
+        "من المنازل النظيفة إلى الأنظمة الدقيقة — يقدم فريقنا المعتمد خدمات تنظيف وصيانة موثوقة في دبي",
       cta: "احصل على عرض مجاني",
-      phone: "+966 12 345 6789"
+      phone: "+966 12 345 6789",
     },
 
     // Services
     services: {
       title: "خدماتنا",
       subtitle: "حلول التنظيف والصيانة الشاملة لاحتياجاتكم",
-      
+
       deepCleaning: {
         title: "خدمات التنظيف العميق",
         description: "حلول التنظيف العميق الشاملة",
@@ -231,10 +242,10 @@ export const translations = {
           "تنظيف السجاد والموكيت",
           "تنظيف المراتب بعمق",
           "تنظيف المطابخ بعمق",
-          "تعقيم الحمامات"
-        ]
+          "تعقيم الحمامات",
+        ],
       },
-      
+
       generalCleaning: {
         title: "خدمات التنظيف العامة",
         description: "الصيانة والتنظيف المنتظم",
@@ -244,10 +255,10 @@ export const translations = {
           "التنظيف السكني",
           "التنظيف التجاري",
           "تنظيف الانتقال",
-          "تنظيف النوافذ"
-        ]
+          "تنظيف النوافذ",
+        ],
       },
-      
+
       technical: {
         title: "الخدمات الفنية",
         description: "الصيانة والإصلاح المهني",
@@ -257,9 +268,9 @@ export const translations = {
           "إصلاح السباكة",
           "خدمات الصيانة العامة",
           "خدمات الدهان",
-          "الإصلاحات الطفيفة"
-        ]
-      }
+          "الإصلاحات الطفيفة",
+        ],
+      },
     },
 
     // Why Choose Us
@@ -269,29 +280,29 @@ export const translations = {
       items: [
         {
           title: "فريق ذو خبرة",
-          description: "أكثر من 5 سنوات من الخبرة المهنية"
+          description: "أكثر من 5 سنوات من الخبرة المهنية",
         },
         {
           title: "استجابة سريعة",
-          description: "خدمة في نفس اليوم متاحة"
+          description: "خدمة في نفس اليوم متاحة",
         },
         {
           title: "منتجات صديقة للبيئة",
-          description: "آمنة لعائلتك والبيئة"
+          description: "آمنة لعائلتك والبيئة",
         },
         {
           title: "ضمان الرضا 100%",
-          description: "نقف وراء جودة عملنا"
+          description: "نقف وراء جودة عملنا",
         },
         {
           title: "مرخص ومؤمن",
-          description: "معتمد بالكامل ومغطى"
+          description: "معتمد بالكامل ومغطى",
         },
         {
           title: "أسعار تنافسية",
-          description: "أفضل قيمة للخدمات المميزة"
-        }
-      ]
+          description: "أفضل قيمة للخدمات المميزة",
+        },
+      ],
     },
 
     // Testimonials
@@ -303,34 +314,36 @@ export const translations = {
           name: "أحمد الراشد",
           text: "خدمة ممتازة! نظفوا مكتبنا بشكل شامل ومهني. أنصح بهم بشدة!",
           rating: 5,
-          location: "الرياض"
+          location: "الرياض",
         },
         {
           name: "سارة محمد",
           text: "خدمة تنظيف عميق رائعة. السجاد يبدو جديد تماماً! راضية جداً عن عملهم.",
           rating: 5,
-          location: "جدة"
+          location: "جدة",
         },
         {
           name: "عمر عبدالله",
           text: "فريق مهني، خدمة في الوقت المحدد، ونتائج رائعة. سأستخدم خدماتهم مرة أخرى بالتأكيد.",
           rating: 5,
-          location: "الدمام"
-        }
-      ]
+          location: "الدمام",
+        },
+      ],
     },
 
     // About
     about: {
       title: "عن إن جي إس",
       subtitle: "شريككم الموثوق لخدمات التنظيف والصيانة في دبي",
-      description: "مع أكثر من 5 سنوات من الخبرة، تخدم شركة إن جي إس للتنظيف والخدمات الفنية العملاء السكنيين والتجاريين في دبي الرئيسية. نحن مرخصون بالكامل وملتزمون بتقديم جودة خدمة استثنائية.",
+      description:
+        "مع أكثر من 5 سنوات من الخبرة، تخدم شركة إن جي إس للتنظيف والخدمات الفنية العملاء السكنيين والتجاريين في دبي الرئيسية. نحن مرخصون بالكامل وملتزمون بتقديم جودة خدمة استثنائية.",
       details: {
         license: "رقم الترخيص: CL-2019-001234",
         experience: "أكثر من 5 سنوات من الخبرة",
         location: "نخدم دبي الرئيسية",
-        mission: "تقديم خدمات تنظيف وصيانة استثنائية تتجاوز توقعات العملاء مع الحفاظ على أعلى معايير الاحترافية والمسؤولية البيئية."
-      }
+        mission:
+          "تقديم خدمات تنظيف وصيانة استثنائية تتجاوز توقعات العملاء مع الحفاظ على أعلى معايير الاحترافية والمسؤولية البيئية.",
+      },
     },
 
     // FAQ
@@ -339,29 +352,35 @@ export const translations = {
       items: [
         {
           question: "ما هي المناطق التي تخدمونها؟",
-          answer: "نقدم الخدمات في منطقة دبي الرئيسية. اتصلوا بنا للتأكد من توفر الخدمة في موقعكم المحدد."
+          answer:
+            "نقدم الخدمات في منطقة دبي الرئيسية. اتصلوا بنا للتأكد من توفر الخدمة في موقعكم المحدد.",
         },
         {
           question: "هل منتجات التنظيف آمنة؟",
-          answer: "نعم، نستخدم منتجات تنظيف صديقة للبيئة وغير سامة وآمنة للأطفال والحيوانات الأليفة والبيئة."
+          answer:
+            "نعم، نستخدم منتجات تنظيف صديقة للبيئة وغير سامة وآمنة للأطفال والحيوانات الأليفة والبيئة.",
         },
         {
           question: "هل تقدمون خدمة في نفس اليوم؟",
-          answer: "نعم، نقدم خدمة في نفس اليوم لاحتياجات التنظيف العاجلة، حسب التوفر. اتصلوا بنا مبكراً للحصول على أفضل مواعيد."
+          answer:
+            "نعم، نقدم خدمة في نفس اليوم لاحتياجات التنظيف العاجلة، حسب التوفر. اتصلوا بنا مبكراً للحصول على أفضل مواعيد.",
         },
         {
           question: "ما المتضمن في التنظيف العميق؟",
-          answer: "يشمل التنظيف العميق تنظيف مفصل لجميع الأسطح والأجهزة والتجهيزات والسجاد والمفروشات والمناطق صعبة الوصول."
+          answer:
+            "يشمل التنظيف العميق تنظيف مفصل لجميع الأسطح والأجهزة والتجهيزات والسجاد والمفروشات والمناطق صعبة الوصول.",
         },
         {
           question: "هل أنتم مرخصون ومؤمنون؟",
-          answer: "نعم، نحن مرخصون ومؤمنون بالكامل. رقم ترخيصنا هو CL-2019-001234."
+          answer:
+            "نعم، نحن مرخصون ومؤمنون بالكامل. رقم ترخيصنا هو CL-2019-001234.",
         },
         {
           question: "كيف يمكنني الحصول على عرض سعر؟",
-          answer: "يمكنك الحصول على عرض سعر مجاني بالاتصال بنا أو عبر الواتساب أو ملء نموذج الاتصال. سنقيم احتياجاتك ونقدم تقديراً تنافسياً."
-        }
-      ]
+          answer:
+            "يمكنك الحصول على عرض سعر مجاني بالاتصال بنا أو عبر الواتساب أو ملء نموذج الاتصال. سنقيم احتياجاتك ونقدم تقديراً تنافسياً.",
+        },
+      ],
     },
 
     // Contact
@@ -374,26 +393,27 @@ export const translations = {
         phone: "رقم الهاتف",
         service: "الخدمة المطلوبة",
         message: "الرسالة",
-        submit: "إرسال الرسالة"
+        submit: "إرسال الرسالة",
       },
       info: {
         phone: "+966 12 345 6789",
         email: "info@njscleaning.com",
-        address: "دبي الرئيسية، دبي، الإمارات العربية المتحدة"
+        address: "دبي الرئيسية، دبي، الإمارات العربية المتحدة",
       },
-      whatsapp: "تواصل واتساب"
+      whatsapp: "تواصل واتساب",
     },
 
     // Footer
     footer: {
-      description: "خدمات التنظيف والصيانة المهنية في دبي. مرخصون ومؤمنون وملتزمون بالتميز.",
+      description:
+        "خدمات التنظيف والصيانة المهنية في دبي. مرخصون ومؤمنون وملتزمون بالتميز.",
       quickLinks: "روابط سريعة",
       services: "الخدمات",
       contact: "معلومات الاتصال",
       social: "تابعونا",
       rights: "© 2024 إن جي إس للتنظيف والخدمات الفنية. جميع الحقوق محفوظة.",
       privacy: "سياسة الخصوصية",
-      terms: "شروط الخدمة"
-    }
-  }
+      terms: "شروط الخدمة",
+    },
+  },
 };

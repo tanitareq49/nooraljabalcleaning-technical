@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Tajawal:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Tajawal:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -41,14 +41,26 @@
     --ring: 150 75% 25%;
 
     /* Custom Design Tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(150 75% 25%), hsl(150 60% 35%));
-    --gradient-hero: linear-gradient(135deg, hsla(140, 10%, 88%, 0.80), hsla(217, 95%, 8%, 0.55));
-    --gradient-section: linear-gradient(180deg, hsl(150 40% 98%), hsl(0 0% 100%));
-    
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(150 75% 25%),
+      hsl(150 60% 35%)
+    );
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsla(0, 0%, 14%, 0.6),
+      hsla(113, 20%, 35%, 0.35)
+    );
+    --gradient-section: linear-gradient(
+      180deg,
+      hsl(150 40% 98%),
+      hsl(0 0% 100%)
+    );
+
     --shadow-soft: 0 4px 12px hsl(150 75% 25% / 0.1);
     --shadow-medium: 0 8px 25px hsl(150 75% 25% / 0.15);
     --shadow-strong: 0 15px 35px hsl(150 75% 25% / 0.2);
-    
+
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
@@ -103,10 +115,22 @@
     --ring: 150 75% 35%;
 
     /* Dark mode gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(150 75% 35%), hsl(150 60% 45%));
-    --gradient-hero: linear-gradient(135deg, hsl(150 75% 35% / 0.95), hsl(220 15% 15% / 0.9));
-    --gradient-section: linear-gradient(180deg, hsl(150 40% 12%), hsl(220 15% 8%));
-    
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(150 75% 35%),
+      hsl(150 60% 45%)
+    );
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(150 75% 35% / 0.95),
+      hsl(220 15% 15% / 0.9)
+    );
+    --gradient-section: linear-gradient(
+      180deg,
+      hsl(150 40% 12%),
+      hsl(220 15% 8%)
+    );
+
     --shadow-soft: 0 4px 12px hsl(0 0% 0% / 0.3);
     --shadow-medium: 0 8px 25px hsl(0 0% 0% / 0.4);
     --shadow-strong: 0 15px 35px hsl(0 0% 0% / 0.5);
@@ -115,11 +139,11 @@
 
 @layer components {
   .font-arabic {
-    font-family: 'Tajawal', sans-serif;
+    font-family: "Tajawal", sans-serif;
   }
-  
+
   .font-english {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
   }
 
   .hero-gradient {
@@ -170,15 +194,20 @@
   .rtl {
     direction: rtl;
   }
-  
+
   .ltr {
     direction: ltr;
   }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 @keyframes fadeInUp {

@@ -56,7 +56,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <div className="flex items-center space-x-8 rtl:space-x-reverse">
               <button
                 onClick={() => scrollToSection("hero")}
@@ -145,7 +145,7 @@ const Navbar = () => {
           </div>
 
           {/* Language Toggle & Phone */}
-          <div className="hidden md:flex items-center space-x-4 rtl:space-x-reverse">
+          <div className="hidden lg:flex items-center space-x-4 rtl:space-x-reverse">
             <a
               href="tel:+966123456789"
               className="flex items-center space-x-2 rtl:space-x-reverse text-foreground hover:text-primary transition-colors"
@@ -162,7 +162,7 @@ const Navbar = () => {
 
             <button
               onClick={toggleLanguage}
-              className="flex items-center space-x-2 rtl:space-x-reverse bg-flex items-center space-x-2 rtl:space-x-reverse bg-white/10 hover:bg-flex items-center space-x-2 rtl:space-x-reverse bg-foreground/10 hover:bg-foreground/20 px-3 py-2 rounded-lg transition-colors/20 px-3 py-2 rounded-lg transition-colors/10 hover:bg-white/20 px-3 py-2 rounded-lg transition-colors"
+              className="flex items-center space-x-2 rtl:space-x-reverse bg-foreground/10 hover:bg-foreground/20 px-3 py-2 rounded-lg transition-colors"
             >
               <Globe className="w-4 h-4 text-foreground" />
               <span
@@ -176,7 +176,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-foreground hover:text-primary transition-colors"
@@ -192,7 +192,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-secondary-foreground/95 backdrop-blur-md border-t border-border">
+          <div className="lg:hidden bg-secondary-foreground/95 backdrop-blur-md border-t border-border">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <button
                 onClick={() => scrollToSection("hero")}

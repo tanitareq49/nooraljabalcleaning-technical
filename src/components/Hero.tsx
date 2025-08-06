@@ -35,7 +35,7 @@ const HeroSection = () => {
           alt="Professional Cleaning Services"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 hero-gradient"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1e293b]/80 to-[#1e293b]/80"></div>
       </div>
 
       {/* Floating Elements */}
@@ -49,19 +49,43 @@ const HeroSection = () => {
         style={{ animationDelay: "4s" }}
       ></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full overflow-hidden">
         <div
-          className={`grid lg:grid-cols-2 gap-10 items-center ${
+          className={`grid lg:grid-cols-2 gap-10 lg:items-center ${
             isRTL ? "lg:flex-row-reverse" : ""
           }`}
         >
           {/* Left: Text Content */}
           <div
-            className={`fade-in-up w-full max-w-[650px] mx-auto lg:mx-0 ${
+            className={`fade-in-up w-full max-w-[650px] lg:mx-0 ${
               isRTL ? "lg:order-2" : ""
             }`}
           >
-            <div className="inline-flex items-center space-x-1 rtl:space-x-reverse bg-primary/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+            <h2
+              className={`text-md sm:text-lg md:text-xl text-white/85 mb-4 ${
+                isRTL ? "font-arabic text-right" : "font-english text-left"
+              }`}
+            >
+              {t.hero.subtitle}
+            </h2>
+
+            <h1
+              className={`text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight ${
+                isRTL ? "font-arabic text-right" : "font-english text-left"
+              }`}
+            >
+              {t.hero.title}
+            </h1>
+
+            <p
+              className={`text-base md:text-lg text-white/80 mb-8 leading-relaxed break-words ${
+                isRTL ? "font-arabic text-right" : "font-english text-left"
+              }`}
+            >
+              {t.hero.description}
+            </p>
+
+            <div className="inline-flex items-center space-x-1 rtl:space-x-reverse bg-secondary backdrop-blur-sm px-4 py-2 rounded-full mb-6">
               <div className="flex items-center space-x-1 rtl:space-x-reverse">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <Star
@@ -79,32 +103,8 @@ const HeroSection = () => {
               </span>
             </div>
 
-            <h1
-              className={`text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight ${
-                isRTL ? "font-arabic text-right" : "font-english text-left"
-              }`}
-            >
-              {t.hero.title}
-            </h1>
-
-            <h2
-              className={`text-lg sm:text-xl md:text-2xl text-white/90 mb-4 ${
-                isRTL ? "font-arabic text-right" : "font-english text-left"
-              }`}
-            >
-              {t.hero.subtitle}
-            </h2>
-
-            <p
-              className={`text-base md:text-lg text-white/80 mb-8 leading-relaxed max-w-lg ${
-                isRTL ? "font-arabic text-right" : "font-english text-left"
-              }`}
-            >
-              {t.hero.description}
-            </p>
-
             <div
-              className={`flex flex-col sm:flex-row gap-4 ${
+              className={`flex flex-col items-start sm:flex-row lg:flex-col gap-4 ${
                 isRTL ? "sm:flex-row-reverse" : ""
               }`}
             >
@@ -112,7 +112,7 @@ const HeroSection = () => {
                 href="https://wa.me/966123456789?text=Hello%2C%20I%20would%20like%20to%20get%20a%20free%20quote%20for%20cleaning%20services%20in%20Dubai"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary group"
+                className="btn-primary group flex items-center gap-2"
               >
                 <span>
                   {isRTL
@@ -122,7 +122,10 @@ const HeroSection = () => {
                 <ArrowRight className="w-5 h-5 ml-2 rtl:ml-0 rtl:mr-2 rtl:rotate-180 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform" />
               </a>
 
-              <a href="tel:+966123456789" className="btn-secondary group">
+              <a
+                href="tel:+966123456789"
+                className="btn-secondary group flex items-center gap-2 bg-white text-foreground hover:bg-foreground hover:text-white transition-all ease-in-out duration-200"
+              >
                 <Phone className="w-5 h-5 mr-2 rtl:mr-0 rtl:ml-2" />
                 <span>{t.hero.phone}</span>
               </a>
@@ -131,11 +134,11 @@ const HeroSection = () => {
 
           {/* Right: Image Slider */}
           <div
-            className={`fade-in-up w-full max-w-[600px] mx-auto lg:mx-0 ${
+            className={`fade-in-up w-full overflow-hidden lg:mx-0 ${
               isRTL ? "lg:order-1" : ""
             }`}
           >
-            <div className="relative w-full overflow-hidden px-4">
+            <div className="relative w-full min-w-0">
               <div
                 className={`flex w-max gap-6 ${
                   isRTL
@@ -146,7 +149,7 @@ const HeroSection = () => {
                 {[...serviceImages, ...serviceImages].map((image, index) => (
                   <div
                     key={index}
-                    className="relative w-[90vw] sm:w-[400px] md:w-[500px] lg:w-[600px] aspect-[4/3] rounded-2xl overflow-hidden shadow-card border border-border/50 bg-card group"
+                    className="relative w-[300px] md:w-[400px] lg:w-[600px] aspect-[4/3] rounded-2xl overflow-hidden shadow-card border border-border/50 bg-card group"
                   >
                     <img
                       src={image}
