@@ -23,15 +23,17 @@
     --primary-light: 150 60% 35%;
     --primary-glow: 150 75% 35%;
 
-    /* Dark Gray Secondary */
-    --secondary: 220 15% 25%;
+    /* Ocean Blue Secondary */
+    --secondary: 215 85% 45%;
     --secondary-foreground: 0 0% 98%;
+    --secondary-light: 215 75% 55%;
+    --secondary-glow: 215 85% 55%;
 
     --muted: 220 15% 96%;
     --muted-foreground: 220 15% 45%;
 
-    --accent: 150 40% 92%;
-    --accent-foreground: 150 75% 25%;
+    --accent: 215 40% 95%;
+    --accent-foreground: 215 85% 45%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
@@ -41,13 +43,15 @@
     --ring: 150 75% 25%;
 
     /* Custom Design Tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(150 75% 25%), hsl(150 60% 35%));
-    --gradient-hero: linear-gradient(135deg, hsla(140, 10%, 88%, 0.80), hsla(217, 95%, 8%, 0.55));
-    --gradient-section: linear-gradient(180deg, hsl(150 40% 98%), hsl(0 0% 100%));
+    --gradient-primary: linear-gradient(135deg, hsl(150 75% 25%), hsl(215 85% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 85% 45% / 0.95), hsl(150 75% 25% / 0.85));
+    --gradient-section: linear-gradient(180deg, hsl(215 40% 98%), hsl(0 0% 100%));
+    --gradient-accent: linear-gradient(135deg, hsl(0 0% 100%), hsl(215 40% 96%));
     
-    --shadow-soft: 0 4px 12px hsl(150 75% 25% / 0.1);
-    --shadow-medium: 0 8px 25px hsl(150 75% 25% / 0.15);
-    --shadow-strong: 0 15px 35px hsl(150 75% 25% / 0.2);
+    --shadow-soft: 0 4px 12px hsl(215 85% 45% / 0.1);
+    --shadow-medium: 0 8px 25px hsl(215 85% 45% / 0.15);
+    --shadow-strong: 0 15px 35px hsl(215 85% 45% / 0.2);
+    --shadow-green: 0 8px 25px hsl(150 75% 25% / 0.15);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -86,14 +90,16 @@
     --primary-light: 150 60% 45%;
     --primary-glow: 150 75% 45%;
 
-    --secondary: 220 15% 15%;
+    --secondary: 215 85% 55%;
     --secondary-foreground: 0 0% 95%;
+    --secondary-light: 215 75% 65%;
+    --secondary-glow: 215 85% 65%;
 
     --muted: 220 15% 15%;
     --muted-foreground: 220 15% 60%;
 
-    --accent: 150 40% 20%;
-    --accent-foreground: 150 75% 35%;
+    --accent: 215 40% 25%;
+    --accent-foreground: 215 85% 55%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 95%;
@@ -103,9 +109,10 @@
     --ring: 150 75% 35%;
 
     /* Dark mode gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(150 75% 35%), hsl(150 60% 45%));
-    --gradient-hero: linear-gradient(135deg, hsl(150 75% 35% / 0.95), hsl(220 15% 15% / 0.9));
-    --gradient-section: linear-gradient(180deg, hsl(150 40% 12%), hsl(220 15% 8%));
+    --gradient-primary: linear-gradient(135deg, hsl(150 75% 35%), hsl(215 85% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 85% 55% / 0.95), hsl(150 75% 35% / 0.85));
+    --gradient-section: linear-gradient(180deg, hsl(215 40% 15%), hsl(220 15% 8%));
+    --gradient-accent: linear-gradient(135deg, hsl(220 15% 10%), hsl(215 40% 20%));
     
     --shadow-soft: 0 4px 12px hsl(0 0% 0% / 0.3);
     --shadow-medium: 0 8px 25px hsl(0 0% 0% / 0.4);
@@ -138,11 +145,15 @@
   }
 
   .btn-primary {
-    @apply bg-primary hover:bg-primary-glow text-primary-foreground px-8 py-4 rounded-lg font-semibold shadow-medium hover:shadow-strong transition-all duration-300 hover:scale-105;
+    @apply bg-primary hover:bg-primary-glow text-primary-foreground px-8 py-4 rounded-lg font-semibold shadow-green hover:shadow-strong transition-all duration-300 hover:scale-105;
   }
 
   .btn-secondary {
-    @apply bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-4 rounded-lg font-semibold border-2 border-transparent hover:border-primary/20 transition-all duration-300;
+    @apply bg-secondary hover:bg-secondary-light text-secondary-foreground px-8 py-4 rounded-lg font-semibold border-2 border-transparent hover:border-primary/20 transition-all duration-300;
+  }
+
+  .btn-accent {
+    @apply bg-white text-secondary border-2 border-secondary/20 hover:bg-secondary hover:text-white px-8 py-4 rounded-lg font-semibold shadow-medium hover:shadow-strong transition-all duration-300;
   }
 
   .card-hover {
