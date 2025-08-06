@@ -1,0 +1,97 @@
+/* Design System - Color Tokens & Variables */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Tajawal:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Base Colors - White & Neutrals */
+    --background: 0 0% 100%;
+    --foreground: 220 15% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 15%;
+
+    /* Primary Brand - Deep Green */
+    --primary: 150 75% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 150 60% 35%;
+    --primary-glow: 150 75% 35%;
+
+    /* Secondary - Ocean Blue */
+    --secondary: 215 85% 45%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-light: 215 75% 55%;
+    --secondary-glow: 215 85% 55%;
+
+    /* Accent Colors */
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 15% 45%;
+    --accent: 215 40% 95%;
+    --accent-foreground: 215 85% 45%;
+
+    /* Utility Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 15% 90%;
+    --input: 220 15% 95%;
+    --ring: 150 75% 25%;
+
+    /* Design Tokens - Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(150 75% 25%), hsl(215 85% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 85% 45% / 0.95), hsl(150 75% 25% / 0.85));
+    --gradient-section: linear-gradient(180deg, hsl(215 40% 98%), hsl(0 0% 100%));
+    --gradient-accent: linear-gradient(135deg, hsl(0 0% 100%), hsl(215 40% 96%));
+    
+    /* Design Tokens - Shadows */
+    --shadow-soft: 0 4px 12px hsl(215 85% 45% / 0.1);
+    --shadow-medium: 0 8px 25px hsl(215 85% 45% / 0.15);
+    --shadow-strong: 0 15px 35px hsl(215 85% 45% / 0.2);
+    --shadow-green: 0 8px 25px hsl(150 75% 25% / 0.15);
+    
+    /* Design Tokens - Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 220 15% 8%;
+    --foreground: 0 0% 95%;
+    --card: 220 15% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 220 15% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 150 75% 35%;
+    --primary-foreground: 220 15% 8%;
+    --primary-light: 150 60% 45%;
+    --primary-glow: 150 75% 45%;
+
+    --secondary: 215 85% 55%;
+    --secondary-foreground: 0 0% 95%;
+    --secondary-light: 215 75% 65%;
+    --secondary-glow: 215 85% 65%;
+
+    --muted: 220 15% 15%;
+    --muted-foreground: 220 15% 60%;
+    --accent: 215 40% 25%;
+    --accent-foreground: 215 85% 55%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 95%;
+    --border: 220 15% 20%;
+    --input: 220 15% 15%;
+    --ring: 150 75% 35%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(150 75% 35%), hsl(215 85% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 85% 55% / 0.95), hsl(150 75% 35% / 0.85));
+    --gradient-section: linear-gradient(180deg, hsl(215 40% 15%), hsl(220 15% 8%));
+    --gradient-accent: linear-gradient(135deg, hsl(220 15% 10%), hsl(215 40% 20%));
+    
+    --shadow-soft: 0 4px 12px hsl(0 0% 0% / 0.3);
+    --shadow-medium: 0 8px 25px hsl(0 0% 0% / 0.4);
+    --shadow-strong: 0 15px 35px hsl(0 0% 0% / 0.5);
+  }
+}

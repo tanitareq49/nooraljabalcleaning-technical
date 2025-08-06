@@ -85,7 +85,7 @@ const Navbar = () => {
                 </button>
 
                 {servicesOpen && (
-                  <div className="absolute top-full left-0 rtl:left-auto rtl:right-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-border overflow-hidden z-10">
+                  <div className="absolute top-full left-0 rtl:left-auto rtl:right-0 mt-2 w-64 bg-card rounded-lg shadow-lg border border-border overflow-hidden z-10">
                     <button
                       onClick={() => {
                         scrollToSection("services");
@@ -162,11 +162,11 @@ const Navbar = () => {
 
             <button
               onClick={toggleLanguage}
-              className="flex items-center space-x-2 rtl:space-x-reverse bg-flex items-center space-x-2 rtl:space-x-reverse bg-white/10 hover:bg-flex items-center space-x-2 rtl:space-x-reverse bg-foreground/10 hover:bg-foreground/20 px-3 py-2 rounded-lg transition-colors/20 px-3 py-2 rounded-lg transition-colors/10 hover:bg-white/20 px-3 py-2 rounded-lg transition-colors"
+              className="flex items-center space-x-2 rtl:space-x-reverse bg-accent/50 hover:bg-accent px-3 py-2 rounded-lg transition-colors"
             >
-              <Globe className="w-4 h-4 text-foreground" />
+              <Globe className="w-4 h-4 text-accent-foreground" />
               <span
-                className={`text-foreground font-medium ${
+                className={`text-accent-foreground font-medium ${
                   isRTL ? "font-arabic" : "font-english"
                 }`}
               >
