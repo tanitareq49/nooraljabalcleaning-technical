@@ -35,7 +35,7 @@ const HeroSection = () => {
           alt="Professional Cleaning Services"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1e293b]/80 to-[#1e293b]/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-white/50 via-gray-900/70 to-black/100"></div>
       </div>
 
       {/* Floating Elements */}
@@ -49,48 +49,24 @@ const HeroSection = () => {
         style={{ animationDelay: "4s" }}
       ></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full overflow-hidden">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
         <div
-          className={`grid lg:grid-cols-2 gap-10 lg:items-center ${
+          className={`grid lg:grid-cols-2 gap-10 items-center ${
             isRTL ? "lg:flex-row-reverse" : ""
           }`}
         >
           {/* Left: Text Content */}
           <div
-            className={`fade-in-up w-full max-w-[650px] lg:mx-0 ${
+            className={`fade-in-up w-full max-w-[650px] mx-0 ${
               isRTL ? "lg:order-2" : ""
             }`}
           >
-            <h2
-              className={`text-md sm:text-lg md:text-xl text-white/85 mb-4 ${
-                isRTL ? "font-arabic text-right" : "font-english text-left"
-              }`}
-            >
-              {t.hero.subtitle}
-            </h2>
-
-            <h1
-              className={`text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight ${
-                isRTL ? "font-arabic text-right" : "font-english text-left"
-              }`}
-            >
-              {t.hero.title}
-            </h1>
-
-            <p
-              className={`text-base md:text-lg text-white/80 mb-8 leading-relaxed break-words ${
-                isRTL ? "font-arabic text-right" : "font-english text-left"
-              }`}
-            >
-              {t.hero.description}
-            </p>
-
-            <div className="inline-flex items-center space-x-1 rtl:space-x-reverse bg-secondary backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center space-x-1 rtl:space-x-reverse bg-green-600 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
               <div className="flex items-center space-x-1 rtl:space-x-reverse">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <Star
                     key={star}
-                    className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                    className="w-4 h-4 fill-yellow-300 text-yellow-300"
                   />
                 ))}
               </div>
@@ -103,8 +79,34 @@ const HeroSection = () => {
               </span>
             </div>
 
+            <h1
+              className={`text-3xl sm:text-4xl md:text-5xl font-bold 
+    bg-gradient-to-r from-white via-emerald-300 to-emerald-200 
+    bg-clip-text text-transparent animate-gradient
+    drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] mb-6 leading-tight 
+    ${isRTL ? "font-arabic text-right" : "font-english text-left"}`}
+            >
+              {t.hero.title}
+            </h1>
+
+            <h2
+              className={`text-lg sm:text-xl md:text-2xl drop-shadow-sm mb-4 lowercase text-white  ${
+                isRTL ? "font-arabic text-right" : "font-english text-left"
+              }`}
+            >
+              {t.hero.subtitle}
+            </h2>
+
+            <p
+              className={`text-base md:text-lg text-slate-200 drop-shadow-sm mb-8 leading-relaxed max-w-lg ${
+                isRTL ? "font-arabic text-right" : "font-english text-left"
+              }`}
+            >
+              {t.hero.description}
+            </p>
+
             <div
-              className={`flex flex-col items-start sm:flex-row lg:flex-col gap-4 ${
+              className={`flex flex-col sm:flex-row gap-4 ${
                 isRTL ? "sm:flex-row-reverse" : ""
               }`}
             >
@@ -124,7 +126,7 @@ const HeroSection = () => {
 
               <a
                 href="tel:+966123456789"
-                className="btn-secondary group flex items-center gap-2 bg-white text-foreground hover:bg-foreground hover:text-white transition-all ease-in-out duration-200"
+                className="btn-secondary group flex items-center gap-2"
               >
                 <Phone className="w-5 h-5 mr-2 rtl:mr-0 rtl:ml-2" />
                 <span>{t.hero.phone}</span>
@@ -134,22 +136,25 @@ const HeroSection = () => {
 
           {/* Right: Image Slider */}
           <div
-            className={`fade-in-up w-full overflow-hidden lg:mx-0 ${
+            className={`fade-in-up w-full max-w-full lg:max-w-[600px] lg:mx-0  overflow-hidden rounded-md ${
               isRTL ? "lg:order-1" : ""
             }`}
           >
-            <div className="relative w-full min-w-0">
+            <div className="relative w-full overflow-hidden px-4">
               <div
-                className={`flex w-max gap-6 ${
-                  isRTL
-                    ? "flex-row-reverse animate-marquee-rtl"
-                    : "animate-marquee"
+                className={`flex w-max animate-marquee gap-6 ${
+                  isRTL ? "flex-row-reverse" : ""
                 }`}
+                style={{
+                  animation: `${
+                    isRTL ? "marquee-rtl" : "marquee"
+                  } 16s linear infinite`,
+                }}
               >
                 {[...serviceImages, ...serviceImages].map((image, index) => (
                   <div
                     key={index}
-                    className="relative w-[300px] md:w-[400px] lg:w-[600px] aspect-[4/3] rounded-2xl overflow-hidden shadow-card border border-border/50 bg-card group"
+                    className="relative w-full h-[300px] sm:h-[400px]  lg:h-auto lg:w-[600px] aspect-[4/3] rounded-2xl overflow-hidden shadow-card border border-border/50 bg-card group"
                   >
                     <img
                       src={image}
