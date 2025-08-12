@@ -293,5 +293,5 @@
 
 .animate-gradient {
   background-size: 200% 200%;
-  animation: gradientMove 3s ease infinite;
+  animation: gradientMove 4s ease-in-out infinite;
 }

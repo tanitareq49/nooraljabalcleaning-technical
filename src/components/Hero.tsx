@@ -35,7 +35,7 @@ const HeroSection = () => {
           alt="Professional Cleaning Services"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/50 via-gray-900/70 to-black/100"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/60 to-white/100"></div>
       </div>
 
       {/* Floating Elements */}
@@ -81,16 +81,16 @@ const HeroSection = () => {
 
             <h1
               className={`text-3xl sm:text-4xl md:text-5xl font-bold 
-    bg-gradient-to-r from-white via-emerald-300 to-emerald-200 
+    bg-gradient-to-r from-black via-[#009300] to-[#015d2f] 
     bg-clip-text text-transparent animate-gradient
-    drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] mb-6 leading-tight 
+    drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)] mb-6 leading-tight 
     ${isRTL ? "font-arabic text-right" : "font-english text-left"}`}
             >
               {t.hero.title}
             </h1>
 
             <h2
-              className={`text-lg sm:text-xl md:text-2xl drop-shadow-sm mb-4 lowercase text-white  ${
+              className={`text-lg sm:text-xl md:text-2xl drop-shadow-sm mb-4 lowercase text-black  ${
                 isRTL ? "font-arabic text-right" : "font-english text-left"
               }`}
             >
@@ -98,7 +98,7 @@ const HeroSection = () => {
             </h2>
 
             <p
-              className={`text-base md:text-lg text-slate-200 drop-shadow-sm mb-8 leading-relaxed max-w-lg ${
+              className={`text-base md:text-lg text-black/70 drop-shadow-sm mb-8 leading-relaxed max-w-lg ${
                 isRTL ? "font-arabic text-right" : "font-english text-left"
               }`}
             >
@@ -126,7 +126,7 @@ const HeroSection = () => {
 
               <a
                 href="tel:+966123456789"
-                className="btn-secondary group flex items-center gap-2"
+                className="btn-secondary bg-black group flex items-center gap-2 hover:bg-secondary hover:text-white  transition-colors ease-in-out duration-300"
               >
                 <Phone className="w-5 h-5 mr-2 rtl:mr-0 rtl:ml-2" />
                 <span>{t.hero.phone}</span>
@@ -161,7 +161,7 @@ const HeroSection = () => {
                       alt={`Service ${index + 1}`}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 bg-gradient-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
                   </div>
                 ))}
               </div>
@@ -171,8 +171,8 @@ const HeroSection = () => {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
+          <div className="w-6 h-10 border-2 border-black/50 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-black/70 rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </div>
