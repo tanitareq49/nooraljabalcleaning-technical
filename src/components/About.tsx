@@ -107,60 +107,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
-        {/* Values Section */}
-        <div className="mt-20 fade-in-up">
-          <h3 className={`text-3xl font-bold text-center text-foreground mb-12 ${isRTL ? 'font-arabic' : 'font-english'}`}>
-            {isRTL ? 'قيمنا الأساسية' : 'Our Core Values'}
-          </h3>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-primary-foreground" />
-              </div>
-              <h4 className={`text-xl font-bold text-foreground mb-3 ${isRTL ? 'font-arabic' : 'font-english'}`}>
-                {isRTL ? 'الجودة' : 'Quality'}
-              </h4>
-              <p className={`text-muted-foreground ${isRTL ? 'font-arabic' : 'font-english'}`}>
-                {isRTL 
-                  ? 'نسعى للتميز في كل خدمة نقدمها'
-                  : 'We strive for excellence in every service we provide'
-                }
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <Target className="w-8 h-8 text-primary-foreground" />
-              </div>
-              <h4 className={`text-xl font-bold text-foreground mb-3 ${isRTL ? 'font-arabic' : 'font-english'}`}>
-                {isRTL ? 'الموثوقية' : 'Reliability'}
-              </h4>
-              <p className={`text-muted-foreground ${isRTL ? 'font-arabic' : 'font-english'}`}>
-                {isRTL 
-                  ? 'يمكنكم الاعتماد علينا في أي وقت'
-                  : 'You can depend on us at any time'
-                }
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="w-8 h-8 text-primary-foreground" />
-              </div>
-              <h4 className={`text-xl font-bold text-foreground mb-3 ${isRTL ? 'font-arabic' : 'font-english'}`}>
-                {isRTL ? 'خدمة العملاء' : 'Customer Service'}
-              </h4>
-              <p className={`text-muted-foreground ${isRTL ? 'font-arabic' : 'font-english'}`}>
-                {isRTL 
-                  ? 'رضا العملاء هو أولويتنا الأولى'
-                  : 'Customer satisfaction is our top priority'
-                }
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

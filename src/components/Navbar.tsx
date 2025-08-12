@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, Phone, Globe, ChevronDown, Home, Users } from "lucide-react";
+import { Menu, X, Phone, Globe, Home, Users, Sparkles } from "lucide-react"; // Imported Sparkles for services icon
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/data/translations";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,22 +38,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
+          <div className="flex-shrink-0 flex items-center w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-16">
             <img
-              src="/lovable-uploads/0fe9d626-97a2-4870-a0c7-2d4d412669a6.png"
+              src={logo}
               alt="NJS Cleaning & Technical Services"
-              className="w-12 h-12 object-contain"
+              className="object-contain w-full h-full"
             />
-            <div className={`ml-3 ${isRTL ? "mr-3 ml-0" : ""}`}>
-              <h1
-                className={`text-lg font-bold text-foreground ${
-                  isRTL ? "font-arabic" : "font-english"
-                }`}
-              >
-                NJS
-              </h1>
-              <p className="text-xs text-foreground/70">Cleaning & Technical</p>
-            </div>
           </div>
 
           {/* Desktop Navigation */}
@@ -68,59 +59,17 @@ const Navbar = () => {
                 <span>{t.nav.home}</span>
               </button>
 
-              {/* Services Dropdown */}
+              {/* Services Dropdown - Now with an icon */}
               <div className="relative">
                 <button
-                  onClick={() => setServicesOpen(!servicesOpen)}
+                  onClick={() => scrollToSection("services")}
                   className={`flex items-center space-x-1 rtl:space-x-reverse text-foreground hover:text-primary transition-colors font-medium ${
                     isRTL ? "font-arabic" : "font-english"
                   }`}
                 >
+                  <Sparkles className="w-4 h-4" /> {/* Services Icon */}
                   <span>{t.nav.services}</span>
-                  <ChevronDown
-                    className={`w-4 h-4 transition-transform ${
-                      servicesOpen ? "rotate-180" : ""
-                    }`}
-                  />
                 </button>
-
-                {servicesOpen && (
-                  <div className="absolute top-full left-0 rtl:left-auto rtl:right-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-border overflow-hidden z-10">
-                    <button
-                      onClick={() => {
-                        scrollToSection("services");
-                        setServicesOpen(false);
-                      }}
-                      className={`w-full px-4 py-3 text-left rtl:text-right hover:bg-accent transition-colors text-foreground ${
-                        isRTL ? "font-arabic" : "font-english"
-                      }`}
-                    >
-                      {isRTL ? "التنظيف العميق" : "Deep Cleaning Services"}
-                    </button>
-                    <button
-                      onClick={() => {
-                        scrollToSection("services");
-                        setServicesOpen(false);
-                      }}
-                      className={`w-full px-4 py-3 text-left rtl:text-right hover:bg-accent transition-colors text-foreground ${
-                        isRTL ? "font-arabic" : "font-english"
-                      }`}
-                    >
-                      {isRTL ? "التنظيف العام" : "General Cleaning Services"}
-                    </button>
-                    <button
-                      onClick={() => {
-                        scrollToSection("services");
-                        setServicesOpen(false);
-                      }}
-                      className={`w-full px-4 py-3 text-left rtl:text-right hover:bg-accent transition-colors text-foreground ${
-                        isRTL ? "font-arabic" : "font-english"
-                      }`}
-                    >
-                      {isRTL ? "الخدمات الفنية" : "Technical Services"}
-                    </button>
-                  </div>
-                )}
               </div>
 
               <button
@@ -147,7 +96,7 @@ const Navbar = () => {
           {/* Language Toggle & Phone */}
           <div className="hidden lg:flex items-center space-x-4 rtl:space-x-reverse">
             <a
-              href="tel:+966123456789"
+              href="tel:+971 54 301 7347"
               className="flex items-center space-x-2 rtl:space-x-reverse text-foreground hover:text-primary transition-colors"
             >
               <Phone className="w-4 h-4" />
@@ -206,47 +155,13 @@ const Navbar = () => {
               <div className="space-y-1">
                 <button
                   onClick={() => scrollToSection("services")}
-                  className={`block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-accent/20 rounded-md transition-colors font-medium ${
+                  className={`flex items-center space-x-2 rtl:space-x-reverse block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-accent/20 rounded-md transition-colors font-medium ${
                     isRTL ? "font-arabic text-right" : "font-english"
                   }`}
                 >
-                  {t.nav.services}
+                  <Sparkles className="w-5 h-5" /> {/* Services Icon */}
+                  <span>{t.nav.services}</span>
                 </button>
-                <div className="ml-4 rtl:ml-0 rtl:mr-4 space-y-1">
-                  <button
-                    onClick={() => {
-                      scrollToSection("services");
-                      setIsOpen(false);
-                    }}
-                    className={`block w-full text-left px-3 py-2 text-foreground/80 hover:text-primary hover:bg-accent/20 rounded-md transition-colors text-sm ${
-                      isRTL ? "font-arabic text-right" : "font-english"
-                    }`}
-                  >
-                    {isRTL ? "التنظيف العميق" : "Deep Cleaning"}
-                  </button>
-                  <button
-                    onClick={() => {
-                      scrollToSection("services");
-                      setIsOpen(false);
-                    }}
-                    className={`block w-full text-left px-3 py-2 text-foreground/80 hover:text-primary hover:bg-accent/20 rounded-md transition-colors text-sm ${
-                      isRTL ? "font-arabic text-right" : "font-english"
-                    }`}
-                  >
-                    {isRTL ? "التنظيف العام" : "General Cleaning"}
-                  </button>
-                  <button
-                    onClick={() => {
-                      scrollToSection("services");
-                      setIsOpen(false);
-                    }}
-                    className={`block w-full text-left px-3 py-2 text-foreground/80 hover:text-primary hover:bg-accent/20 rounded-md transition-colors text-sm ${
-                      isRTL ? "font-arabic text-right" : "font-english"
-                    }`}
-                  >
-                    {isRTL ? "الخدمات الفنية" : "Technical Services"}
-                  </button>
-                </div>
               </div>
               <button
                 onClick={() => scrollToSection("about")}
@@ -269,7 +184,7 @@ const Navbar = () => {
 
               <div className="border-t border-border pt-3 mt-3">
                 <a
-                  href="tel:+966123456789"
+                  href="tel:+971 54 301 7347"
                   className={`flex items-center space-x-2 rtl:space-x-reverse px-3 py-2 text-foreground hover:bg-accent/20 rounded-md transition-colors font-medium ${
                     isRTL ? "font-arabic" : "font-english"
                   }`}

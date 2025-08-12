@@ -70,45 +70,7 @@ const Testimonials = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16 fade-in-up">
-          <div className="bg-card rounded-2xl p-8 shadow-soft border border-primary/10">
-            <h3 className={`text-2xl font-bold text-card-foreground mb-4 ${isRTL ? 'font-arabic' : 'font-english'}`}>
-              {isRTL ? 'انضم إلى عملائنا الراضين' : 'Join Our Satisfied Customers'}
-            </h3>
-            <p className={`text-muted-foreground mb-6 max-w-2xl mx-auto ${isRTL ? 'font-arabic' : 'font-english'}`}>
-              {isRTL 
-                ? 'اكتشف لماذا يثق المئات من العملاء في خدماتنا للحصول على تنظيف وصيانة احترافية.' 
-                : 'Discover why hundreds of customers trust our services for professional cleaning and maintenance.'
-              }
-            </p>
-            
-            {/* Trust Badges */}
-            <div className="flex flex-wrap justify-center gap-6 mb-8">
-              <div className="flex items-center space-x-2 rtl:space-x-reverse bg-primary/10 px-4 py-2 rounded-full">
-                <Star className="w-4 h-4 text-primary" />
-                <span className={`text-primary font-medium text-sm ${isRTL ? 'font-arabic' : 'font-english'}`}>
-                  4.9/5 {isRTL ? 'تقييم' : 'Rating'}
-                </span>
-              </div>
-              <div className="flex items-center space-x-2 rtl:space-x-reverse bg-primary/10 px-4 py-2 rounded-full">
-                <span className={`text-primary font-medium text-sm ${isRTL ? 'font-arabic' : 'font-english'}`}>
-                  500+ {isRTL ? 'عميل راضي' : 'Happy Clients'}
-                </span>
-              </div>
-              <div className="flex items-center space-x-2 rtl:space-x-reverse bg-primary/10 px-4 py-2 rounded-full">
-                <span className={`text-primary font-medium text-sm ${isRTL ? 'font-arabic' : 'font-english'}`}>
-                  {isRTL ? 'مرخص ومؤمن' : 'Licensed & Insured'}
-                </span>
-              </div>
-            </div>
-
-            <button className="btn-primary">
-              <span className={isRTL ? 'font-arabic' : 'font-english'}>
-                {isRTL ? 'احجز خدمتك الآن' : 'Book Your Service Now'}
-              </span>
-            </button>
-          </div>
-        </div>
+        
       </div>
     </section>
   );
