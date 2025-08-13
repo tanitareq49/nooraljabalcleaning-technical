@@ -1,7 +1,7 @@
-import React from 'react';
-import { Star, Quote } from 'lucide-react';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { translations } from '@/data/translations';
+import React from "react";
+import { Star, Quote } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/data/translations";
 
 const Testimonials = () => {
   const { language, isRTL } = useLanguage();
@@ -82,9 +82,7 @@ const Testimonials = () => {
                     className={`text-muted-foreground text-sm ${
                       isRTL ? "font-arabic" : "font-english"
                     }`}
-                  >
-                    {testimonial.location}
-                  </div>
+                  ></div>
                 </div>
               </div>
 

@@ -10,6 +10,7 @@ import FAQ from '@/components/FAQ';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import OurWork from '@/components/OurWork'; 
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       <div className="min-h-screen">
         <Navbar />
         <Hero />
+        <OurWork />
         <Services />
         <WhyChooseUs />
         <Testimonials />
