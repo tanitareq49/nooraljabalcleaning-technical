@@ -13,9 +13,11 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center mb-16 fade-in-up">
           <h2
-            className={`text-4xl md:text-5xl font-bold text-foreground mb-4 ${
-              isRTL ? "font-arabic" : "font-english"
-            }`}
+            className={`text-4xl md:text-5xl font-bold bg-gradient-to-r from-black via-[#009300] to-[#015d2f] 
+              bg-clip-text text-transparent animate-gradient
+              drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)] mb-4 ${
+                isRTL ? "font-arabic" : "font-english"
+              }`}
           >
             {t.contact.title}
           </h2>
@@ -150,7 +152,10 @@ const Contact = () => {
                 : "We are available round the clock to serve you. Call us or message us on WhatsApp for quick response."}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center ">
-              <a href="tel:+971 54 301 7347" className="btn-primary flex items-center justify-center gap-2">
+              <a
+                href="tel:+971 54 301 7347"
+                className="btn-primary flex items-center justify-center gap-2"
+              >
                 <Phone className="w-5 h-5 mr-2 rtl:mr-0 rtl:ml-2" />
                 <span className={isRTL ? "font-arabic" : "font-english"}>
                   {isRTL ? "اتصل الآن" : "Call Now"}

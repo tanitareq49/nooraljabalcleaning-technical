@@ -4,6 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/data/translations";
 import deepCleaningImage from "@/assets/deep-cleaning.jpg";
 import technicalImage from "@/assets/technical-services.jpg";
+import generalCleaningImage from "@/assets/generalCleaning.jpg"; // Fixed import
 
 const Services = () => {
   const { language, isRTL } = useLanguage();
@@ -23,7 +24,7 @@ const Services = () => {
       title: t.services.generalCleaning.title,
       description: t.services.generalCleaning.description,
       items: t.services.generalCleaning.items,
-      image: deepCleaningImage, // Reusing for now
+      image: generalCleaningImage, // Corrected image
       gradient: "from-secondary to-secondary/80",
     },
     {
@@ -42,11 +43,11 @@ const Services = () => {
         {/* Header */}
         <div className="text-center mb-16 fade-in-up">
           <h2
-            className={`text-4xl md:text-5xl font-bold mb-4  bg-gradient-to-r from-black via-[#009300] to-[#015d2f] 
-    bg-clip-text text-transparent animate-gradient
-    drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)] ${
-      isRTL ? "font-arabic" : "font-english"
-    }`}
+            className={`text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-black via-[#009300] to-[#015d2f] 
+              bg-clip-text text-transparent animate-gradient
+              drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)] ${
+                isRTL ? "font-arabic" : "font-english"
+              }`}
           >
             {t.services.title}
           </h2>
@@ -69,14 +70,14 @@ const Services = () => {
               style={{ animationDelay: `${index * 200}ms` }}
             >
               {/* Service Image */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-48 sm:h-64 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div
-                  className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-80 group-hover:opacity-60 transition-opacity duration-500`}
+                  className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-20 group-hover:opacity-0 transition-opacity duration-500`}
                 ></div>
 
                 {/* Icon */}
@@ -138,7 +139,7 @@ const Services = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16 fade-in-up max-w-content mx-auto">
+        <div className="text-center mt-16 fade-in-up max-w-content mx-auto self-center">
           <div className="bg-card rounded-2xl p-8 shadow-soft">
             <h3
               className={`text-2xl font-bold text-card-foreground mb-4 ${
@@ -158,9 +159,9 @@ const Services = () => {
             </p>
             <a
               href="tel:+966123456789"
-              className="btn-primary group flex items-center justify-center gap-2 transition-colors ease-in-out duration-300 text-center mx-auto"
+              className="btn-primary group flex items-center justify-center gap-2 transition-colors ease-in-out duration-300 text-center max-w-min mx-auto text-nowrap"
             >
-              <Phone className="w-5 h-5" /> {/* This is the added call icon */}
+              <Phone className="w-5 h-5" />
               <span className={isRTL ? "font-arabic" : "font-english"}>
                 {isRTL ? "اتصل بنا الآن" : "Call Us Now"}
               </span>

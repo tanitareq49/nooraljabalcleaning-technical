@@ -12,10 +12,20 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16 fade-in-up">
-          <h2 className={`text-4xl md:text-5xl font-bold text-foreground mb-4 ${isRTL ? 'font-arabic' : 'font-english'}`}>
+          <h2
+            className={`text-4xl md:text-5xl font-bold bg-gradient-to-r from-black via-[#009300] to-[#015d2f] 
+              bg-clip-text text-transparent animate-gradient
+              drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)] mb-4 ${
+                isRTL ? "font-arabic" : "font-english"
+              }`}
+          >
             {t.testimonials.title}
           </h2>
-          <p className={`text-xl text-muted-foreground max-w-3xl mx-auto ${isRTL ? 'font-arabic' : 'font-english'}`}>
+          <p
+            className={`text-xl text-muted-foreground max-w-3xl mx-auto ${
+              isRTL ? "font-arabic" : "font-english"
+            }`}
+          >
             {t.testimonials.subtitle}
           </p>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mt-6 rounded-full"></div>
@@ -24,7 +34,7 @@ const Testimonials = () => {
         {/* Testimonials Grid */}
         <div className="grid md:grid-cols-3 gap-8">
           {t.testimonials.items.map((testimonial, index) => (
-            <div 
+            <div
               key={index}
               className={`bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-500 card-hover fade-in-up relative`}
               style={{ animationDelay: `${index * 200}ms` }}
@@ -37,12 +47,19 @@ const Testimonials = () => {
               {/* Stars */}
               <div className="flex items-center space-x-1 rtl:space-x-reverse mb-4 mt-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  <Star
+                    key={i}
+                    className="w-5 h-5 fill-yellow-400 text-yellow-400"
+                  />
                 ))}
               </div>
 
               {/* Testimonial Text */}
-              <blockquote className={`text-card-foreground leading-relaxed mb-6 ${isRTL ? 'font-arabic' : 'font-english'}`}>
+              <blockquote
+                className={`text-card-foreground leading-relaxed mb-6 ${
+                  isRTL ? "font-arabic" : "font-english"
+                }`}
+              >
                 "{testimonial.text}"
               </blockquote>
 
@@ -54,10 +71,18 @@ const Testimonials = () => {
                   </span>
                 </div>
                 <div>
-                  <div className={`font-bold text-card-foreground ${isRTL ? 'font-arabic' : 'font-english'}`}>
+                  <div
+                    className={`font-bold text-card-foreground ${
+                      isRTL ? "font-arabic" : "font-english"
+                    }`}
+                  >
                     {testimonial.name}
                   </div>
-                  <div className={`text-muted-foreground text-sm ${isRTL ? 'font-arabic' : 'font-english'}`}>
+                  <div
+                    className={`text-muted-foreground text-sm ${
+                      isRTL ? "font-arabic" : "font-english"
+                    }`}
+                  >
                     {testimonial.location}
                   </div>
                 </div>
@@ -70,7 +95,6 @@ const Testimonials = () => {
         </div>
 
         {/* Bottom CTA */}
-        
       </div>
     </section>
   );

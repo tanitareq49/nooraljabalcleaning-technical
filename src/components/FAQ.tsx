@@ -18,9 +18,11 @@ const FAQ = () => {
         {/* Header */}
         <div className="text-center mb-16 fade-in-up">
           <h2
-            className={`text-4xl md:text-5xl font-bold text-foreground mb-4 ${
-              isRTL ? "font-arabic" : "font-english"
-            }`}
+            className={`text-4xl md:text-5xl font-bold bg-gradient-to-r from-black via-[#009300] to-[#015d2f] 
+              bg-clip-text text-transparent animate-gradient
+              drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)] mb-4 ${
+                isRTL ? "font-arabic" : "font-english"
+              }`}
           >
             {t.faq.title}
           </h2>
