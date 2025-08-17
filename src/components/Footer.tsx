@@ -53,11 +53,13 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex-shrink-0 flex items-center w-16 h-16 md:w-20 md:h-20 mb-4">
-              <img
-                src={logo}
-                alt="NJS Cleaning & Technical Services"
-                className="object-contain w-full h-full"
-              />
+              <a href="#" onClick={() => scrollToSection("hero")}>
+                <img
+                  src={logo}
+                  alt="NJS Cleaning & Technical Services"
+                  className="object-contain w-full h-full"
+                />
+              </a>
             </div>
             <p
               className={`text-secondary-foreground/80 leading-relaxed ${

@@ -64,7 +64,7 @@ const FAQ = () => {
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <div className="p-6 pt-0 border-t border-border/50">
+                <div className="p-6 border-t border-border/50">
                   <p
                     className={`text-muted-foreground leading-relaxed ${
                       isRTL ? "font-arabic" : "font-english"

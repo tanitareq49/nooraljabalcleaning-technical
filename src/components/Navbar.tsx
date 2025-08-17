@@ -39,11 +39,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-16">
-            <img
-              src={logo}
-              alt="NJS Cleaning & Technical Services"
-              className="object-contain w-full h-full"
-            />
+            <a href="#" onClick={() => scrollToSection("hero")}>
+              <img
+                src={logo}
+                alt="NJS Cleaning & Technical Services"
+                className="object-contain w-full h-full"
+              />
+            </a>
           </div>
 
           {/* Desktop Navigation */}
