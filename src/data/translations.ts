@@ -16,7 +16,7 @@ export const translations = {
       description:
         "From spotless homes to smooth-running systems — our certified team provides reliable cleaning and technical services across Dubai.",
       cta: "Get Free Quote",
-      phone: "+966 12 345 6789",
+      phone: " ‪+971509487147",
     },
 
     // Services
@@ -199,7 +199,7 @@ export const translations = {
         submit: "Send Message",
       },
       info: {
-        phone: "+966 12 345 6789",
+        phone: " ‪+971509487147",
         email: "info@njscleaning.com",
         address: "Dubai Main Town, Dubai, UAE",
       },
@@ -237,7 +237,7 @@ export const translations = {
       description:
         "من المنازل النظيفة إلى الأنظمة الدقيقة — يقدم فريقنا المعتمد خدمات تنظيف وصيانة موثوقة في دبي",
       cta: "احصل على عرض مجاني",
-      phone: "+966 12 345 6789",
+      phone: " ‪+971509487147",
     },
 
     // Services
@@ -420,7 +420,7 @@ export const translations = {
         submit: "إرسال الرسالة",
       },
       info: {
-        phone: "+966 12 345 6789",
+        phone: " ‪+971509487147",
         email: "info@njscleaning.com",
         address: "دبي الرئيسية، دبي، الإمارات العربية المتحدة",
       },
