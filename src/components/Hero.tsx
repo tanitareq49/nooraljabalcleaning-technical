@@ -116,11 +116,7 @@ const HeroSection = () => {
                 rel="noopener noreferrer"
                 className="btn-primary group flex items-center gap-2"
               >
-                <span>
-                  {isRTL
-                    ? "احصل على عرض مجاني عبر واتساب"
-                    : "Get Free Quote via WhatsApp"}
-                </span>
+                <span>{isRTL ? "احصل عبر واتساب" : "Get via WhatsApp"}</span>
                 <ArrowRight className="w-5 h-5 ml-2 rtl:ml-0 rtl:mr-2 rtl:rotate-180 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform" />
               </a>
 

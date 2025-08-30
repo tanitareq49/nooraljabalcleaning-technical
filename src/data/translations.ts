@@ -14,9 +14,9 @@ export const translations = {
       title: "Expert Cleaning & Technical Services in Dubai",
       subtitle: "Where Clean Meets Precision.",
       description:
-        "From spotless homes to smooth-running systems — our certified team provides reliable cleaning and technical services across Dubai.",
+        "Certified, trusted, and dedicated – our expert team delivers sparkling results for homes and offices across Dubai.",
       cta: "Get Free Quote",
-      phone: " ‪+971509487147",
+      phone: "+971509487147",
     },
 
     // Services
@@ -199,7 +199,7 @@ export const translations = {
         submit: "Send Message",
       },
       info: {
-        phone: " ‪+971509487147",
+        phone: "+971509487147",
         email: "info@njscleaning.com",
         address: "Dubai Main Town, Dubai, UAE",
       },
@@ -235,9 +235,8 @@ export const translations = {
       title: "خدمات التنظيف والصيانة الفنية المتخصصة في دبي",
       subtitle: "حيث يلتقي النظافة بالإتقان",
       description:
-        "من المنازل النظيفة إلى الأنظمة الدقيقة — يقدم فريقنا المعتمد خدمات تنظيف وصيانة موثوقة في دبي",
-      cta: "احصل على عرض مجاني",
-      phone: " ‪+971509487147",
+        "معتمدون، موثوقون، ومتفانون – فريقنا المتخصص يقدم نتائج متألقة للمنازل والمكاتب في جميع أنحاء دبي.",
+      phone: "+971509487147",
     },
 
     // Services
@@ -420,7 +419,7 @@ export const translations = {
         submit: "إرسال الرسالة",
       },
       info: {
-        phone: " ‪+971509487147",
+        phone: "+971509487147",
         email: "info@njscleaning.com",
         address: "دبي الرئيسية، دبي، الإمارات العربية المتحدة",
       },
