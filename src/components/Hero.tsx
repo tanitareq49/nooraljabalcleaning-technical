@@ -125,7 +125,7 @@ const HeroSection = () => {
               </a>
 
               <a
-                href="tel:+971 54 301 7347"
+                href="tel:+971 50 948 7147"
                 className="btn-secondary bg-black group flex items-center gap-2 hover:bg-secondary hover:text-white  transition-colors ease-in-out duration-300"
               >
                 <Phone className="w-5 h-5 mr-2 rtl:mr-0 rtl:ml-2" />

@@ -100,7 +100,7 @@ const FAQ = () => {
                 : "Our customer service team is ready to answer all your questions"}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+971 54 301 7347" className="btn-primary">
+              <a href="tel:+971 50 948 7147" className="btn-primary">
                 <span className={isRTL ? "font-arabic" : "font-english"}>
                   {isRTL ? "اتصل بنا" : "Call Us"}
                 </span>

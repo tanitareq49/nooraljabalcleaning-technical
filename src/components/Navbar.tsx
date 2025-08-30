@@ -98,7 +98,7 @@ const Navbar = () => {
           {/* Language Toggle & Phone */}
           <div className="hidden lg:flex items-center space-x-4 rtl:space-x-reverse">
             <a
-              href="tel:+971 54 301 7347"
+              href="tel:+971 50 948 7147"
               className="flex items-center space-x-2 rtl:space-x-reverse text-foreground hover:text-primary transition-colors"
             >
               <Phone className="w-4 h-4" />
@@ -186,7 +186,7 @@ const Navbar = () => {
 
               <div className="border-t border-border pt-3 mt-3">
                 <a
-                  href="tel:+971 54 301 7347"
+                  href="tel:+971 50 948 7147"
                   className={`flex items-center space-x-2 rtl:space-x-reverse px-3 py-2 text-foreground hover:bg-accent/20 rounded-md transition-colors font-medium ${
                     isRTL ? "font-arabic" : "font-english"
                   }`}

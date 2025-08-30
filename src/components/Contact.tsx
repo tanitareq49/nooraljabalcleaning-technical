@@ -47,7 +47,7 @@ const Contact = () => {
                 {isRTL ? "اتصل بنا" : "Call Us"}
               </h3>
               <a
-                href="tel:+971 54 301 7347"
+                href="tel:+971 50 948 7147"
                 className={`text-muted-foreground hover:text-primary transition-colors text-lg ${
                   isRTL ? "font-arabic" : "font-english"
                 }`}
@@ -55,7 +55,7 @@ const Contact = () => {
                 {t.contact.info.phone}
               </a>
               <a
-                href="tel:+971 54 301 7347"
+                href="tel:+971 50 948 7147"
                 className="w-full mt-4 btn-primary flex items-center justify-center"
               >
                 <Phone className="w-5 h-5 mr-2 rtl:mr-0 rtl:ml-2" />
@@ -153,7 +153,7 @@ const Contact = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center ">
               <a
-                href="tel:+971 54 301 7347"
+                href="tel:+971 50 948 7147"
                 className="btn-primary flex items-center justify-center gap-2"
               >
                 <Phone className="w-5 h-5 mr-2 rtl:mr-0 rtl:ml-2" />
