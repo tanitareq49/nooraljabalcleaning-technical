@@ -12,9 +12,9 @@ export const translations = {
     // Hero Section
     hero: {
       title: "Expert Cleaning & Technical Services in Dubai",
-      subtitle: "Where Clean Meets Precision.",
+      subtitle: "Keeping Dubai Clean",
       description:
-        "Certified, trusted, and dedicated – our expert team delivers sparkling results for homes and offices across Dubai.",
+        "Certified, trusted, and dedicated – our expert team delivers sparkling cleaning results for homes and offices across Dubai.",
       cta: "Get Free Quote",
       phone: "+971509487147",
     },
@@ -233,9 +233,9 @@ export const translations = {
     // Hero Section
     hero: {
       title: "خدمات التنظيف والصيانة الفنية المتخصصة في دبي",
-      subtitle: "حيث يلتقي النظافة بالإتقان",
+      subtitle: "الحفاظ على نظافة دبي",
       description:
-        "معتمدون، موثوقون، ومتفانون – فريقنا المتخصص يقدم نتائج متألقة للمنازل والمكاتب في جميع أنحاء دبي.",
+        "فريقنا المعتمد والموثوق والمخلص يقدم نتائج تنظيف لامعة للمنازل والمكاتب في جميع أنحاء دبي",
       phone: "+971509487147",
     },
 
