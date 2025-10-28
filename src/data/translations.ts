@@ -141,7 +141,7 @@ export const translations = {
       description:
         "With over 5 years of experience, NJS Cleaning & Technical Services has been serving residential and commercial clients in Dubai main town. We are fully licensed and committed to providing exceptional service quality.",
       details: {
-        license: "License No: CL-2019-001234",
+        license: "Licensed & Insured",
         experience: "5+ Years of Experience",
         location: "Serving Dubai Main Town",
         mission:
@@ -175,8 +175,7 @@ export const translations = {
         },
         {
           question: "Are you licensed and insured?",
-          answer:
-            "Yes, we are fully licensed and insured. Our license number is CL-2019-001234.",
+          answer: "Yes, we are fully licensed and insured.",
         },
         {
           question: "How can I get a quote?",
@@ -200,7 +199,7 @@ export const translations = {
       },
       info: {
         phone: "+971509487147",
-        email: "info@njscleaning.com",
+        email: "nooraljabalcleaningtechnical@gmail.com",
         address: "Dubai Main Town, Dubai, UAE",
       },
       whatsapp: "WhatsApp Us",
@@ -361,7 +360,7 @@ export const translations = {
       description:
         "مع أكثر من 5 سنوات من الخبرة، تخدم شركة إن جي إس للتنظيف والخدمات الفنية العملاء السكنيين والتجاريين في دبي الرئيسية. نحن مرخصون بالكامل وملتزمون بتقديم جودة خدمة استثنائية.",
       details: {
-        license: "رقم الترخيص: CL-2019-001234",
+        license: "مرخص ومؤمن",
         experience: "أكثر من 5 سنوات من الخبرة",
         location: "نخدم دبي الرئيسية",
         mission:
@@ -395,8 +394,7 @@ export const translations = {
         },
         {
           question: "هل أنتم مرخصون ومؤمنون؟",
-          answer:
-            "نعم، نحن مرخصون ومؤمنون بالكامل. رقم ترخيصنا هو CL-2019-001234.",
+          answer: "نعم، نحن مرخصون ومؤمنون بالكامل.",
         },
         {
           question: "كيف يمكنني الحصول على عرض سعر؟",
@@ -420,7 +418,7 @@ export const translations = {
       },
       info: {
         phone: "+971509487147",
-        email: "info@njscleaning.com",
+        email: "nooraljabalcleaningtechnical@gmail.com",
         address: "دبي الرئيسية، دبي، الإمارات العربية المتحدة",
       },
       whatsapp: "تواصل واتساب",

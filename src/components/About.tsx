@@ -1,7 +1,7 @@
-import React from 'react';
-import { MapPin, Calendar, Award, Target } from 'lucide-react';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { translations } from '@/data/translations';
+import React from "react";
+import { MapPin, Calendar, Award, Target } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/data/translations";
 
 const About = () => {
   const { language, isRTL } = useLanguage();
@@ -11,18 +11,18 @@ const About = () => {
     {
       icon: Award,
       title: t.about.details.license,
-      color: 'text-primary'
+      color: "text-primary",
     },
     {
       icon: Calendar,
       title: t.about.details.experience,
-      color: 'text-secondary'
+      color: "text-secondary",
     },
     {
       icon: MapPin,
       title: t.about.details.location,
-      color: 'text-primary-light'
-    }
+      color: "text-primary-light",
+    },
   ];
 
   return (
