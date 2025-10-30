@@ -143,7 +143,9 @@ const Footer = () => {
               <div className="flex items-center space-x-3 rtl:space-x-reverse">
                 <Mail className="w-5 h-5 text-gradient-primary flex-shrink-0" />
                 <a
-                  href={`mailto:${t.contact.info.email}`}
+                  href={`https://mail.google.com/mail/?view=cm&to=${t.contact.info.email}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-secondary-foreground/80 hover:text-gradient-primary transition-colors"
                 >
                   {t.contact.info.email}

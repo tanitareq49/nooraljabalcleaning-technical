@@ -199,7 +199,7 @@ export const translations = {
       },
       info: {
         phone: "+971509487147",
-        email: "nooraljabalcleaningtechnical@gmail.com",
+        email: "nooraljabalc@gmail.com",
         address: "Dubai Main Town, Dubai, UAE",
       },
       whatsapp: "WhatsApp Us",
@@ -418,7 +418,7 @@ export const translations = {
       },
       info: {
         phone: "+971509487147",
-        email: "nooraljabalcleaningtechnical@gmail.com",
+        email: "nooraljabalc@gmail.com",
         address: "دبي الرئيسية، دبي، الإمارات العربية المتحدة",
       },
       whatsapp: "تواصل واتساب",
