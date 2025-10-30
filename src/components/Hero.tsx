@@ -4,7 +4,7 @@ import React from "react";
 import heroImage from "@/assets/hero-cleaning.jpg";
 import mattressImage from "@/assets/mattress-cleaning.jpg";
 import pestControlImage from "@/assets/pest-control.jpg";
-import sanitizationImage from "@/assets/sanitization.jpg";
+import sanitizationImage from "@/assets/sanitization.webp";
 
 import { ArrowRight, Phone, Star } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
